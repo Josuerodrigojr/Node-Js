@@ -10,7 +10,8 @@ function prompt(terminal, question) {
 }
 
 async function main() {
-  const terminal = readline.createInterface({
+  const terminal = 
+  readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   });
