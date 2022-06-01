@@ -6,7 +6,7 @@ const arquivoTxt =
   'C:/Users/josue/OneDrive/Área de Trabalho/Curso Ifood/Node-Js/Projeto final/Livros.txt';
 let palavraAtualizada = '';
 
-app.get(/POST/, function (req, res) {
+app.post(/POST/, function (req, res) {
   const url = req.path;
   const UrlPalavra = url.split('/');
   let palavra = UrlPalavra[2];
@@ -37,5 +37,5 @@ app.get('/GET', function (req, res) {
 });
 
 app.listen(3000, function (req, res) {
-  console.log('Server is running at port 3001');
+  console.log('Server is running at port 3000');
 });
